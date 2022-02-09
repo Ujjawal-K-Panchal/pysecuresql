@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: pysecuresql
+Version: 1.0.0
+Summary: 
+        Title: pysecuresql: Simple SQL connection handling by avoiding SQL injection.
+	---
+	Contents:	
+		1.) ssql.: Secure SQL.
+        
+  @author: Ujjawal.K.Panchal, @Email: ujjawalpanchal32@gmail.com
+	---
+        Copyright (C) Ujjawal K. Panchal - All Rights Reserved.	
+	---
+    
+Home-page: #
+Author: Ujjawal K. Panchal
+Author-email: ujjawalpanchal32@gmail.com
+License: BSD3.
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.5

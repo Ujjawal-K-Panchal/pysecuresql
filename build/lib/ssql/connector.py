@@ -100,32 +100,23 @@ class Connection():
 
     def query(self, q, params):
         self.ensure_connectivity()
-        try:
-            self.innerCursor.execute(q, params)
-        except mysql.connector.errors.ProgrammingError as e:
-            raise e
-        except:
-            self.close()
-            self.connect()
-            self.innerCursor.execute(q, params)
+        self.innerCursor.execute(q, params)
         return self.get_results()
 
     def safe_query(self, q, params):
         self.ensure_connectivity()
-        try:
-            self.innerCursor.execute(query_constraint(q, params))
-        except mysql.connector.errors.ProgrammingError as e:
-            raise e
-        except:
-            self.close()
-            self.connect()
-            self.innerCursor.execute(q, params)    
+        self.innerCursor.execute(query_constraint(q, params))
         return self.get_results()
     
     def close(self):
-        self.innerCursor.close()
         self.connection.close()
         return
+
+
+
+
+
+
 
 if __name__ == "__main__":
     connection = Connection(creds = "./creds/SQL") #suggested to not store creds on a file and rather user env vars. (Here only for demonstration purposes).

@@ -1,0 +1,8 @@
+setup.py
+pysecuresql.egg-info/PKG-INFO
+pysecuresql.egg-info/SOURCES.txt
+pysecuresql.egg-info/dependency_links.txt
+pysecuresql.egg-info/not-zip-safe
+pysecuresql.egg-info/requires.txt
+pysecuresql.egg-info/top_level.txt
+ssql/connector.py
